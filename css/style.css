@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* Color Family */
+:root{
+    --main-text: #ff4646;
+    --main-color: linear-gradient(#ff3434,#b11212);
+    --light-color: #f1f1f1;
+    --white: #ffffff;
+    --dark-color: #424242;
+    --black: #222222;
+}
+/* Button */
+.btn{
+    background: var(--main-color);
+    color: var(--light-color);
+    font-size: 15px;
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
+    padding: 8px 22px;
+    border-radius: 0;
+    transition: .5s all linear;
+}
+.btn:hover{
+    background: transparent;
+    border: 2px solid var(--main-text);
+    color: var(--main-text);
+}
+/* Navbar Section Start */
+.navbar .navbar-toggler{
+    border: none;
+    box-shadow: none;
+}
+.bg-light{
+    padding: 0 !important;
+}
+.navbar .navbar-brand img{
+    width: 140px;
+}
+.navbar .navbar-toggler i{
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+.navbar .navbar-nav 
+.nav-item .active{
+    background: var(--main-color);
+    color: var(--light-color) !important;
+    
+}
+.navbar .navbar-nav 
+.nav-item .nav-link{
+    margin: 0 5px;
+    line-height: 45px;
+    font-weight: 500;
+    color: var(--black);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 10px;
+    transition: 1s all ease-in-out;
+}
+.navbar .navbar-nav 
+.nav-item .nav-link:hover{
+    background: var(--main-color);
+    color: var(--light-color) !important;
+}
+.dropdown-item:hover{
+    background: var(--main-color);
+    color: var(--light-color);
+}
+/* Navbar Section End */
+/* Banner Section Start */
+.home{
+    background: linear-gradient(90deg,rgba(14, 14, 14, 0.493),rgba(17, 17, 17, 0.349)),url(../images/bg.png);
+    min-height: 90vh;
+    min-width: 100%;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.home .home-content{ 
+    position: absolute;
+    top: 20%;
+}
+.home .home-content h1{
+    color: var(--white);
+    font-size: 45px;
+    font-weight: bold;
+}
+.home .home-content span{
+    color: var(--main-text);
+}
+.home .btn{
+    line-height: 40px;
+    margin-top: 3rem;
+    font-size: 18px;
+    width: 11rem;
+    height: 3.5rem;    
+}
+/* Banner Section End */
+/* Process Section Start */
+#process{
+    position: relative;
+    min-height: 100vh;
+    min-width: 100%;
+    padding-top: 5rem;
+    background-color: var(--white);
+}
+.process h1{ 
+    color: var(--black);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.process h1 span{
+    color: var(--main-text);
+}
+.process p{
+    font-size: 25px;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+.doner-search{
+    margin-top: -6rem;
+    background: var(--light-color);
+    box-shadow: 4px 4px 20px rgba(134, 134, 134, 0.473);
+    padding: 1rem 4rem;
+}
+.doner-search .form-select{
+    box-shadow: 4px 4px 20px rgba(134, 134, 134, 0.473);
+    margin: 15px;
+    height: 3rem;
+    width: 12rem;
+    font-size: 18px;
+    border: 0;
+}
+.doner-search .btn{
+    margin: 15px;
+    height: 3rem;
+    width: 10rem;
+    font-size: 18px;
+}    
+/* Process Section End*/
+/* Blood Section Start */
+#blood{
+    padding-top: 5rem;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: var(--light-color);
+}
+.blood h1{
+    color: var(--black);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.blood h1 span{
+    color: var(--main-text);
+}
+.blood-group{
+    margin-top: 80px;
+}
+.blood-group .blood-card{
+    box-shadow: 4px 4px 10px rgba(184, 176, 176, 0.473);
+    display: flex;
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: .5s all linear;
+}
+.blood-group .blood-card:hover{
+    transform: translateZ(-5px) scale(1.1);
+    box-shadow: 8px 8px 15px rgba(134, 134, 134, 0.473);
+}
+.blood-group .blood-card h1{
+    color: var(--main-text);
+}
+/* Blood Section End */
+/* Doner Section Start */
+#doner{
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: var(--white);
+    padding-top: 5rem;
+}
+.doner h1{
+    color: var(--black);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;;
+}
+.doner h1 span{
+    color: var(--main-text);
+}
+
+.profile-doner .card{
+    background: var(--light-color);
+}
+.profile-doner .card-img img{
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    border: 5px solid var(--main-text);
+}
+.profile-doner .card-body{
+    background: var(--dark-color);
+}
+.profile-doner .card-body h3{
+    text-align: center;
+    color: var(--white);
+    font-size: 22px;
+}
+.profile-doner .card-body p{
+    text-align: center;
+    color: var(--white);
+}
+.profile-doner .card-footer{
+    display: flex;
+    padding: 0.5rem 1rem;
+    align-items: flex-start;
+    align-content: space-around;
+    justify-content: space-evenly;
+    background: var(--main-color);
+    
+}
+.profile-doner .card-footer i{
+    font-size: 20px;
+    color: var(--white);
+    transition: .5s all linear;
+}
+.card-footer .fa-facebook:hover{
+    color: #1877F2;
+}
+.card-footer .fa-linkedin:hover{
+    color: #0077B5;
+}
+.card-footer .fa-twitter:hover{
+    color: #1DA1F2;
+}
+.card-footer .fa-whatsapp:hover{
+    color: #25D366;
+}
+/* Doner Section End */
+/* Pagination Section Start */
+.pagination .page-item .page-link{
+    color: var(--dark-color);
+    font-size: 20px;
+}
+/* Pagination Section End */
+/* Campaing Section Start */
+#campaing{
+    min-width: 100%;
+    min-height: 100vh;
+    background: var(--light-color);
+    padding-top: 5rem;
+}
+.campaing h1{
+    color: var(--black);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.campaing h1 span{
+    color: var(--main-text);
+}
+.campaing-post .card-body h4{
+    background: var(--main-color);
+    padding: 5px 20px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--white);
+}
+.campaing-post .card-body h2{
+    color: var(--black);
+    font-size: 25px;
+    font-weight: bold;
+}
+.campaing-post .card-body a{
+    color: var(--black);
+    font-size: 20px;
+    margin: 15px;
+}
+.campaing-post .card-body p{
+    font-size: 15px;
+    color: var(--dark-color);
+}
+.card-body span{
+    font-size: 13px;
+    margin: 0 5px;
+    color: var(--dark-color);
+}
+/* Campaing Section End */
+/* About section Start */
+#about{
+    min-width: 100%;
+    min-height: 100vh;
+    background: var(--light-color);
+    padding-top: 5rem;
+}
+.about h1{
+    color: var(--main-text);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.about .about-content{
+    margin-top: 3rem;
+}
+.about .about-content h2{
+    color: var(--black);
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-bottom: 4px solid var(--main-text);
+}
+.about .about-content p{
+    color: var(--dark-color);
+    font-size: 20px;
+    margin-top: 2rem;
+}
+.about .about-content i{
+    font-size: 30px;
+    color: var(--main-text);
+    margin: 30px 30px 0px 0px;
+}
+.about .about-content span{
+    font-size: 18px;
+    color: var(--black);
+}
+.about .about-img img{
+   margin-top: 7rem;
+   border-radius: 50px 0px 50px 0px;
+   box-shadow: 8px 8px 15px rgba(77, 77, 77, 0.473),-8px -8px 15px white;
+}
+/* About Section End */
+/* Contact Section Start */
+#contact{
+    min-width: 100%;
+    min-height: 100%;
+    padding-top: 5rem;
+}
+.contact h1{
+    color: var(--main-text);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.contact .contact-form{
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px rgba(49, 49, 49, 0.493);
+}
+.contact .form-address h2{
+    color: var(--main-color);
+    font-weight: bold;
+    border-bottom: 4px solid var(--main-text);
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+.contact .form-icon i{
+    font-size: 25px;
+    margin-right: 20px;
+}
+.contact .form-icon p{
+    font-size: 16px;
+}
+/* Contact Section End */
+/* Gellary Section Start */
+#gallery{
+    min-width: 100%;
+    min-height: 100vh;
+    background: var(--light-color);
+    padding-top: 5rem;
+}
+.gallery h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: var(--main-text);
+}
+.gallery-img{
+	padding: 50px 0;
+}
+.gallery-img img{
+	background: var(--white);
+	padding: 15px;
+	width: 100%;
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+#gallery-modal .modal-img{
+	width: 100%;
+}
+/* Gellary Section End */
+/* Sing-in Section Start */
+#sign-up{
+    min-width: 100%;
+    min-height: 100vh;
+    background: var(--light-color);
+    padding-top: 5rem;
+}
+.sign-up{
+    box-shadow: 6px 6px 10px rgba(134, 134, 134, 0.473),-6px -6px 10px white;
+    border-radius: 10px;
+}
+.sign-up h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.sign-up span{
+    color: var(--main-text);
+}
+/* Sign Up Section End */
+/* Sign In Section Start */
+#sign-in{
+    min-width: 100%;
+    min-height: 100vh;
+    background: var(--light-color);
+    padding-top: 5rem;
+}
+.sign-in{
+    box-shadow: 6px 6px 10px rgba(134, 134, 134, 0.473),-6px -6px 10px white;
+    border-radius: 10px;
+}
+.sign-in h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.sign-in span{
+    color: var(--main-text);
+}
+/* Sign In Section End */
+/* Forget Section Start */
+#forget{
+    min-width: 100%;
+    min-height: 100vh;
+    background: var(--light-color);
+    padding-top: 5rem;
+}
+.forget{
+    box-shadow: 6px 6px 10px rgba(134, 134, 134, 0.473),-6px -6px 10px white;
+    border-radius: 10px;
+}
+.forget h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.forget span{
+    color: var(--main-text);
+}
+.forget h3{
+    margin-bottom: 3rem;
+}
+/* Forget Section End */
+/* Update Pass Section Start */
+#update-pass{
+    min-width: 100%;
+    min-height: 100vh;
+    background: var(--light-color);
+    padding-top: 5rem;
+}
+.update-pass{
+    box-shadow: 6px 6px 10px rgba(134, 134, 134, 0.473),-6px -6px 10px white;
+    border-radius: 10px;
+}
+.update-pass h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.update-pass span{
+    color: var(--main-text);
+}
+.update-pass h3{
+    margin-bottom: 3rem;
+}
+/* Update Pass Section End */
+
+
+
+
+
+
+
+/*=====================================================
+                Dashbord Section
+======================================================= */
+/* Admin Section */
